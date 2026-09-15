@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon"
+        href="Media/Fairy_con.avif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        #Con {
+            background-color: rgba(218, 233, 247, 0.378);
+        }
+
+        #btn1 {
+            display: inline-block;
+            background-color: black;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        #btn2 {
+            display: inline-block;
+            background-color: black;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid blue;
+        }
+
+        #Color {
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            margin-bottom: 15px;
+        }
+
+        #Size {
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        #btn1,
+        #btn2,
+        #btn3,
+        #btn4 {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            padding: 0;
+            margin-right: 8px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #btn1:hover,
+        #btn2:hover,
+        #btn3:hover,
+        #btn4:hover {
+            background-color: black;
+            color: rgb(165, 162, 162);
+        }
+
+
+
+        .child-text {
+            position: absolute;
+            left: 480px;
+            top: 20px;
+            background-color: rgb(224, 221, 221);
+            opacity: 80%;
+            color: red;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+
+        .card-title {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #card {
+            background-color: rgba(240, 237, 237, 0.201);
+            border-right: 2px solid black;
+            border-left: 0px;
+            border-top: 0px;
+            
+        }
+
+        .m-footer {
+            background-color: rgba(240, 237, 237, 0.376);
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        #T1 {
+            border: 0;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        #Pay {
+            margin-left: 15px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        .More {
+            font-size: 0.7rem;
+            font-weight: bold;
+            background-color: rgba(128, 128, 128, 0.655);
+            color: black;
+            padding: 2px 5px;
+            border-radius: 15px;
+            margin-left: 7px;
+        }
+
+        .form {
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="Bootstrap_Flex.html"><img
+                    src="https://cdn.vectorstock.com/i/500p/92/29/abstract-tee-shirt-logo-vector-22539229.jpg" alt=""
+                    width="70px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNab">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNab">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End OF Navbar -->
+    </div>
+
+    <div class="container-fluid border border-0" id="Con">
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="carousel slide" id="myCarousel1">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="0"
+                            class="active"></button>
+
+                        <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="1"></button>
+
+
+                    </div>
+
+                    <!-- Images -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-img">
+                                <img src="Media/Red_T.png"
+                                    class="d-block w-100" alt="Tee" height="485px" id="T1">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-img">
+                                <img src="Media/RedT.png"
+                                    class="d-block w-100" alt="Tee" height="485px" id="T1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prev & Next -->
+                    <button class="carousel-control-prev" type="button" data-bs-slide="prev"
+                        data-bs-target="#myCarousel1">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-slide="next"
+                        data-bs-target="#myCarousel1">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+
+                <!-- Black T-SHIRT CAROUSEL -->
+                <div id="blackCarousel" class="carousel slide d-none">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#blackCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+
+                        <button type="button" data-bs-target="#blackcarousel" data-bs-slide-to="1"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="" class="d-block w-100" alt="Black T-Shirt">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100" alt="Black T-Shirt">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#blackCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#blackCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Start Of Card Section -->
+            <div class="col-md-6">
+                <div class="card rounded-2" id="card">
+                    <p class="child-text"><i class="bi bi-currency-dollar"></i>15 Dollars</p>
+                    <div class="card-body">
+                        <h1 class="card-title">Long Sleeve T-Shirt</h1>
+                        <br>
+                        <p><i class="bi bi-star-fill text-danger" id="Quality"></i> Quality
+                            <span class="More">+7</span>
+                        </p>
+                        <p class="card-text">A comfortable, casual long-sleeve T-shirt with a simple design, perfect for
+                            everyday wear and easy layering.
+                        </p>
+                        <br>
+                        <div class="d-flex">
+                            <div id="Color">
+                                <p id="Color">Colors</p>
+                                <a href="index.html" id="btn1" type="button"
+                                    class="rounded-circle bg-black border border-rounded"></a>
+                                <a href="ICThw.2.html" id="btn2" type="button" class="rounded-circle bg-danger"></a>
+                            </div>
+
+                            <form action="" method="" class="form">
+                                <label for="">Email</label>
+                                <input type="email" name="email">
+                                <br>
+                                <br>
+
+
+                                <label for="">Password</label>
+                                <input type="password" name="password">
+                                <input type="submit" value="login" class="submit">
+
+                            </form>
+
+
+                        </div>
+
+                        <div id="Size">
+                            <p id="Size">Size</p>
+                            <a href="#" id="btn1" class="rounded-circle bg-white border border-dark">S</a>
+                            <a href="#" id="btn2" class="rounded-circle bg-white border border-dark">M</a>
+                            <a href="#" id="btn3" class="rounded-circle bg-white border border-dark">L</a>
+                            <a href="#" id="btn4" class="rounded-circle bg-white border border-dark">XL</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="m-footer p-2 d-flex justify-content-between">
+                    <button class="btn btn-secondary btn-sm" id="Pay">Add To Credit Card</button>
+                    <a href="https://classydock.com.mm/">https://classydock.com.mm/</a>
+
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://web.telegram.org/a/"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.tiktok.com/en/"><i class="fab fa-tiktok"></i></a>
+                    </div>
+
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
